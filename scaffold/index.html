@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="start-rules">
+            <h2>Quiz Rules</h2>
+            <ul>
+                <li>The quiz will last for 60 seconds.</li>
+                <li>Answer as many questions as you can.</li>
+                <li>Your score will be updated for every correct answer.</li>
+                <li>Click "Start Quiz" to begin.</li>
+            </ul>
+            <button id="startQuiz">Start Quiz</button>
+        </div>
+        
+        <div class="card hidden" id="quizScreen">
+            <div class="header">
+                <div id="timer">60</div>
+                <div id="score">0</div>
+            </div>
+            <div id="questionContainer">
+                <p id="question">Question will appear here</p>
+                <button class="answer" id="option1">Answer 1</button>
+                <button class="answer" id="option2">Answer 2</button>
+                <button class="answer" id="option3">Answer 3</button>
+                <button class="answer" id="option4">Answer 4</button>
+            </div>
+        </div>
+        
+        <div class="card hidden" id="endScreen">
+            <h2>Quiz Over!</h2>
+            <p>Your final score is: <span id="finalScore">0</span></p>
+            <button id="playAgain">Play Again</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
